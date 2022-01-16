@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.ProfileFragment"
+        android:background="@color/colorPrimaryDark">
+
+
+        <EditText
+            android:id="@+id/updated_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_border"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:filterTouchesWhenObscured="false"
+            android:gravity="center_vertical"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/updated_e_mail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/text_border"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/updated_name"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <EditText
+            android:id="@+id/updated_pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/text_border"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/updated_e_mail"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <EditText
+            android:id="@+id/updated_address"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/text_border"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent"
+            android:textSize="18sp"
+
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/updated_pass"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <EditText
+            android:id="@+id/updated_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/text_border"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updated_address" />
+
+        <EditText
+            android:id="@+id/updated_dataOFbirth"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/text_border"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Age"
+            android:inputType="date"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updated_phone" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_border"
+            android:text="Save"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updated_dataOFbirth" />
+
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_border"
+            android:text="Dismiss"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.ProfileFragment"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/profile_container">
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/user_e_mail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="E-Mail"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+        <TextView
+            android:id="@+id/user_pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_e_mail" />
+
+        <TextView
+            android:id="@+id/user_address"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_pass" />
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_address" />
+
+        <TextView
+            android:id="@+id/user_age"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/text_border"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Age"
+            android:inputType="date"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_phone" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_border"
+            android:text="UPDATE"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_age" />
+
+        <Button
+            android:id="@+id/log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/button_border"
+            android:text="Log Out"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
